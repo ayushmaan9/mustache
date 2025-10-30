@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rayvaanah Realtors</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore Rayvaanah Realtors' portfolio of landmark infrastructure projects across India. Highways, bridges, urban development and more.">
+    <meta name="keywords" content="infrastructure portfolio, construction projects India, highway projects, bridge construction">
+    
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Portfolio - Rayvaanah Realtors">
+    <meta property="og:description" content="Landmark infrastructure projects across India">
+    <meta property="og:image" content="/assets/images/og-portfolio.jpg">
+    <meta property="og:url" content="https://rayvaanah.com/portfolio.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rayvaanah Portfolio">
+    <meta name="twitter:description" content="Transforming India's infrastructure landscape">
+    
+ <!-- Favicon -->
+    <link rel="image" type="image/x-icon" href="/assets/images/LOGOM.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2JGB47SVR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R2JGB47SVR');
+    </script>
+    
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "hfk5xvhj8k");
+    </script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="page-loader" aria-hidden="true">
+        <div class="loader-logo">R</div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="nav-primary" role="navigation">
+        <div class="nav-container">
+            <a href="/" class="nav-logo" aria-label="Rayvaanah Realtors Home">
+                <span class="logo-text">RAYVAANAH</span>
+            </a>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="expertise.html" class="nav-link">Expertise</a>
+                <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                <a href="leadership.html" class="nav-link">Leadership</a>
+                <a href="tenders.html" class="nav-link">Tenders</a>
+                <a href="contact.html" class="nav-link nav-cta">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Page Hero -->
+    <section class="page-hero minimal">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="page-title fade-up">Our Portfolio</h1>
+                <p class="page-subtitle fade-up-delay">Landmarks That Define Excellence</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Filter Bar -->
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-wrapper">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="highways">Highways</button>
+                <button class="filter-btn" data-filter="bridges">Bridges</button>
+                <button class="filter-btn" data-filter="water">Water</button>
+                <button class="filter-btn" data-filter="urban">Urban</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Magazine Gallery -->
+    <section class="portfolio-gallery">
+        <div class="gallery-container">
+            <!-- Project 1 -->
+            <article class="gallery-item featured" data-category="highways">
+                <div class="gallery-image">
+                    <img src="/assets/images/project-coastal-road.jpg"
+                         srcset="/assets/images/project-coastal-road-mobile.jpg 480w,
+                                 /assets/images/project-coastal-road-tablet.jpg 768w,
+                                 /assets/images/project-coastal-road.jpg 1600w"
+                         sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 50vw"
+                         alt="Mumbai Coastal Road" 
+                         loading="lazy">
+                </div>
+                <div class="gallery-content">
+                    <span class="project-category">Highway Infrastructure</span>
+                    <h3 class="project-title">Mumbai Coastal Road</h3>
+                    <p class="project-description">
+                        A transformative 29.2 km freeway along Mumbai's western coastline, featuring 
+                        twin tunnels, interchanges, and bridges. This project redefines urban mobility 
+                        while preserving the coastal ecosystem.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail">
+                            <span class="detail-label">Value</span>
+                            <span class="detail-value">₹12,700 Cr</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Duration</span>
+                            <span class="detail-value">2018-2024</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Status</span>
+                            <span class="detail-value">Ongoing</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 2 -->
+            <article class="gallery-item" data-category="bridges">
+                <div class="gallery-image">
+                    <img src="/assets/images/project-signature-bridge.jpg"
+                         srcset="/assets/images/project-signature-bridge-mobile.jpg 480w,
+                                 /assets/images/project-signature-bridge-tablet.jpg 768w,
+                                 /assets/images/project-signature-bridge.jpg 1200w"
+                         sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                         alt="Delhi Signature Bridge" 
+                         loading="lazy">
+                </div>
+                <div class="gallery-content">
+                    <span class="project-category">Bridge Engineering</span>
+                    <h3 class="project-title">Delhi Signature Bridge</h3>
+                    <p class="project-description">
+                        India's first asymmetrical cable-stayed bridge featuring a 154-meter high pylon.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail">
+                            <span class="detail-value">₹1,518 Cr</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 3 -->
+            <article class="gallery-item" data-category="water">
+                <div class="gallery-image">
+                    <img src="/assets/images/project-water-treatment.jpg"
+                         srcset="/assets/images/project-water-treatment-mobile.jpg 480w,
+                                 /assets/images/project-water-treatment-tablet.jpg 768w,
+                                 /assets/images/project-water-treatment.jpg 1200w"
+                         sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                         alt="Bangalore Water Treatment Plant" 
+                         loading="lazy">
+                </div>
+                <div class="gallery-content">
+                    <span class="project-category">Water Infrastructure</span>
+                    <h3 class="project-title">Bangalore Water Treatment Plant</h3>
+                    <p class="project-description">
+                        State-of-the-art 500 MLD water treatment facility serving 2 million residents.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail">
+                            <span class="detail-value">₹850 Cr</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">500 MLD</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 4 -->
+            <article class="gallery-item large" data-category="urban">
+                <div class="gallery-image">
+                    <img src="/assets/images/project-smart-city.jpg"
+                         srcset="/assets/images/project-smart-city-mobile.jpg 480w,
+                                 /assets/images/project-smart-city-tablet.jpg 768w,
+                                 /assets/images/project-smart-city.jpg 1600w"
+                         sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 66vw"
+                         alt="Pune Smart City Development" 
+                         loading="lazy">
+                </div>
+                <div class="gallery-content">
+                    <span class="project-category">Urban Development</span>
+                    <h3 class="project-title">Pune Smart City Initiative</h3>
+                    <p class="project-description">
+                        Comprehensive urban transformation including intelligent traffic systems, 
+                        IoT-enabled infrastructure, and sustainable public spaces across 400 acres.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail">
+                            <span class="detail-value">₹3,200 Cr</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">400 Acres</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">2020-2025</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 5 -->
+            <article class="gallery-item" data-category="highways">
+                <div class="gallery-image">
+                    <img src="/assets/images/project-expressway.jpg"
+                         srcset="/assets/images/project-expressway-mobile.jpg 480w,
+                                 /assets/images/project-expressway-tablet.jpg 768w,
+                                 /assets/images/project-expressway.jpg 1200w"
+                         sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                         alt="Eastern Peripheral Expressway" 
+                         loading="lazy">
+                </div>
+                <div class="gallery-content">
+                    <span class="project-category">Expressway</span>
+                    <h3 class="project-title">Eastern Peripheral Expressway</h3>
+                    <p class="project-description">
+                        135 km greenfield expressway with solar lighting and rainwater harvesting.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail">
+                            <span class="detail-value">₹11,000 Cr</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">135 km</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 6 -->
+            <article class="gallery-item" data-category="bridges">
+                <div class="gallery-image">
+                    <img src="/assets/images/project-river-bridge.jpg"
+                         srcset="/assets/images/project-river-bridge-mobile.jpg 480w,
+                                 /assets/images/project-river-bridge-tablet.jpg 768w,
+                                 /assets/images/project-river-bridge.jpg 1200w"
+                         sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                         alt="Brahmaputra River Bridge" 
+                         loading="lazy">
+                </div>
+                <div class="gallery-content">
+                    <span class="project-category">Bridge Infrastructure</span>
+                    <h3 class="project-title">Brahmaputra River Bridge</h3>
+                    <p class="project-description">
+                        India's longest river bridge spanning 9.15 km across the Brahmaputra.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail">
+                            <span class="detail-value">₹4,998 Cr</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">9.15 km</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 7 -->
+            <article class="gallery-item" data-category="water">
+                <div class="gallery-image">
+                    <img src="/assets/images/project-dam.jpg"
+                         srcset="/assets/images/project-dam-mobile.jpg 480w,
+                                 /assets/images/project-dam-tablet.jpg 768w,
+                                 /assets/images/project-dam.jpg 1200w"
+                         sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                         alt="Kaleshwaram Lift Irrigation" 
+                         loading="lazy">
+                </div>
+                <div class="gallery-content">
+                    <span class="project-category">Water Project</span>
+                    <h3 class="project-title">Kaleshwaram Lift Irrigation</h3>
+                    <p class="project-description">
+                        World's largest lift irrigation project providing water to 45 lakh acres.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail">
+                            <span class="detail-value">₹80,000 Cr</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-value">45L Acres</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Project 8 -->
+            <article class="gallery-item featured" data-category="urban">
+                <div class="gallery-image">
+                    <img src="/assets/images/project-metro.jpg"
+                         srcset="/assets/images/project-metro-mobile.jpg 480w,
+                                 /assets/images/project-metro-tablet.jpg 768w,
+                                 /assets/images/project-metro.jpg 1600w"
+                         sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 50vw"
+                         alt="Chennai Metro Phase II" 
+                         loading="lazy">
+                </div>
+                <div class="gallery-content">
+                    <span class="project-category">Urban Transit</span>
+                    <h3 class="project-title">Chennai Metro Phase II</h3>
+                    <p class="project-description">
+                        118.9 km metro network expansion with 128 stations, revolutionizing urban 
+                        mobility in Chennai with state-of-the-art driverless trains and green stations.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail">
+                            <span class="detail-label">Investment</span>
+                            <span class="detail-value">₹61,843 Cr</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Network</span>
+                            <span class="detail-value">118.9 km</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Stations</span>
+                            <span class="detail-value">128</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <!-- Gallery Navigation -->
+        <div class="gallery-nav">
+            <button class="gallery-prev" aria-label="Previous projects">←</button>
+            <button class="gallery-next" aria-label="Next projects">→</button>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="section-portfolio-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-prefix">₹</span>
+                    <span class="stat-number" data-count="50000">0</span>
+                    <span class="stat-suffix">Cr+</span>
+                    <span class="stat-label">Project Value</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-count="15">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">States Covered</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-count="25">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="section-portfolio-cta">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Let's Build Your Next Landmark</h2>
+                <p>Partner with excellence. Create with confidence.</p>
+                <a href="contact.html" class="btn-primary">Start Your Project</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <!-- identical legacy copy -->
+    
+    <!-- Scripts -->
+    <script src="js/loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+    
+    <!-- Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+</body>
+</html>

@@ -1,28 +1,1202 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Realtime Filter  Webapp using PoseNet Neural Network</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <title>Rayvaanah Realtors - Top Infrastructure Development Company in India | Highway, Bridge & Urban Construction</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Rayvaanah Realtors - India's leading infrastructure development company with 25+ years of excellence. Specializing in highway construction, bridge engineering, water projects & urban development. Get free consultation today!">
+    <meta name="keywords" content="infrastructure development India, highway construction company, bridge engineering, water projects, urban development, construction company Mumbai, infrastructure contractors">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://rayvaanah.com/">
+    
+    <!-- OpenGraph -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rayvaanah Realtors - India's Premier Infrastructure Development Company">
+    <meta property="og:description" content="25+ years of excellence in highway construction, bridge engineering, water projects & urban development. 500+ completed projects across India.">
+    <meta property="og:url" content="https://rayvaanah.com/">
+    <meta property="og:site_name" content="Rayvaanah Realtors">
+    <meta property="og:image" content="https://rayvaanah.com/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@rayvaanah">
+    <meta name="twitter:title" content="Rayvaanah Realtors - Infrastructure Excellence">
+    <meta name="twitter:description" content="Leading infrastructure development with 500+ projects, 25+ years experience. Free consultation available.">
+    <meta name="twitter:image" content="https://rayvaanah.com/assets/images/twitter-card.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS -->
+    <style>
+        /* Critical Above-the-Fold CSS */
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:'Inter',sans-serif;overflow-x:hidden;background:#fff}
+        .page-loader{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;display:flex;align-items:center;justify-content:center;z-index:9999}
+        .loader-logo{font-family:'Bodoni Moda',serif;font-size:4rem;font-weight:700;color:#0A4D3C;animation:pulse 1.5s infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+        .nav-primary{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid #e8e8e8}
+        .hero-fullscreen{position:relative;width:100%;height:100vh;min-height:600px;display:flex;align-items:center;justify-content:center}
+    </style>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/modules.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R2JGB47SVR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R2JGB47SVR', {
+            'send_page_view': true,
+            'anonymize_ip': true
+        });
+        
+        // Enhanced event tracking
+        gtag('event', 'page_load', {
+            'page_title': document.title,
+            'page_location': window.location.href
+        });
+    </script>
+    
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "hfk5xvhj8k");
+    </script>
+    
+    <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "GeneralContractor",
+        "name": "Rayvaanah Realtors",
+        "alternateName": "Rayvaanah Infrastructure Development",
+        "url": "https://rayvaanah.com",
+        "logo": "https://rayvaanah.com/assets/images/logo.png",
+        "image": "https://rayvaanah.com/assets/images/company-building.jpg",
+        "description": "Leading infrastructure development company in India specializing in highway construction, bridge engineering, water projects, and urban development with over 25 years of experience.",
+        "foundingDate": "1999",
+        "telephone": "+91-9876543210",
+        "email": "info@rayvaanah.com",
+        "priceRange": "₹₹₹₹",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Business District",
+            "addressLocality": "Mumbai",
+            "addressRegion": "Maharashtra",
+            "postalCode": "400001",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "19.0760",
+            "longitude": "72.8777"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "14:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/rayvaanah",
+            "https://www.linkedin.com/company/rayvaanah",
+            "https://twitter.com/rayvaanah",
+            "https://www.instagram.com/rayvaanah",
+            "https://www.youtube.com/@rayvaanah"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Infrastructure Development Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Highway Construction",
+                        "description": "Complete highway and expressway construction services"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Bridge Engineering",
+                        "description": "Design and construction of bridges, flyovers, and underpasses"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Water Projects",
+                        "description": "Water treatment plants, dams, and irrigation systems"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Urban Development",
+                        "description": "Smart city solutions and urban infrastructure"
+                    }
+                }
+            ]
+        },
+        "areaServed": [
+            {
+                "@type": "State",
+                "name": "Maharashtra"
+            },
+            {
+                "@type": "State",
+                "name": "Delhi"
+            },
+            {
+                "@type": "State",
+                "name": "Karnataka"
+            },
+            {
+                "@type": "State",
+                "name": "Tamil Nadu"
+            },
+            {
+                "@type": "Country",
+                "name": "India"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "numberOfEmployees": {
+            "@type": "QuantitativeValue",
+            "value": "2000"
+        }
+    }
+    </script>
+    
+    <!-- LocalBusiness Schema for Main Office -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Rayvaanah Realtors - Mumbai Head Office",
+        "@id": "https://rayvaanah.com/#mumbai-office",
+        "url": "https://rayvaanah.com",
+        "telephone": "+91-22-12345678",
+        "priceRange": "₹₹₹₹",
+        "image": "https://rayvaanah.com/assets/images/mumbai-office.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Business District",
+            "addressLocality": "Mumbai",
+            "addressRegion": "MH",
+            "postalCode": "400001",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "19.0760",
+            "longitude": "72.8777"
+        }
+    }
+    </script>
+    
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://rayvaanah.com/"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- WebSite Schema with SearchAction -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Rayvaanah Realtors",
+        "url": "https://rayvaanah.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://rayvaanah.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </head>
-
-<body background="background.jpg">
-<center>
-  <h3 class="btn btn-success">Realtime Filter</h3>
-  <hr>
-  <button onclick="ts()" class="btn btn-warning">TAKE SNAPSHOT</button> 
-
-</center>
-<script src="main.js"></script>
+<body>
+    <!-- Loader -->
+    <div class="page-loader" aria-hidden="true">
+        <div class="loader-logo">R</div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="nav-primary" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="/" class="nav-logo" aria-label="Rayvaanah Realtors Home">
+                <span class="logo-text">RAYVAANAH</span>
+            </a>
+            
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="expertise.html" class="nav-link">Expertise</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="leadership.html" class="nav-link">Leadership</a>
+                <a href="tenders.html" class="nav-link">Tenders</a>
+                <a href="contact.html" class="nav-link nav-cta">Get Free Quote</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-fullscreen">
+        <div class="hero-media">
+            <video autoplay muted loop playsinline poster="/assets/images/hero-poster.jpg" aria-label="Infrastructure development showcase video">
+                <source src="/assets/videos/rayvaanahlogo.mp4" type="video/mp4">
+                Your browser doesn't support video. <a href="/portfolio.html">View our projects</a>
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title fade-up">
+                Building Tomorrow's<br>
+                <span class="text-accent">Infrastructure</span> Today
+            </h1>
+            <p class="hero-subtitle fade-up-delay">
+                India's Leading Infrastructure Development Company | 25 Years of Excellence | 500+ Projects Completed
+            </p>
+            <div class="hero-cta-group fade-up-delay-2">
+                <a href="#contact-form" class="btn-primary" onclick="gtag('event', 'cta_click', {'button_text': 'Get Free Consultation', 'cta_position': 'hero'})">
+                    Get Free Consultation
+                    <span class="btn-arrow">→</span>
+                </a>
+                <a href="tel:+919876543210" class="btn-ghost" onclick="gtag('event', 'phone_click', {'phone_number': '+919876543210', 'location': 'hero'})">
+                    <span class="btn-icon">📞</span>
+                    +91 98765 43210
+                </a>
+            </div>
+            
+            <!-- Trust Badges -->
+            <div class="hero-trust-badges fade-up-delay-2">
+                <div class="trust-badge">
+                    <span class="badge-icon">✓</span>
+                    <span>ISO 9001:2015</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="badge-icon">✓</span>
+                    <span>500+ Projects</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="badge-icon">✓</span>
+                    <span>25+ Years</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="badge-icon">★</span>
+                    <span>4.8/5 Rating</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+    
+    <!-- Dynamic Local Projects Banner -->
+    <div id="localProjectsBanner" class="local-banner" style="display:none;">
+        <div class="container">
+            <p>✨ <strong id="localCityName"></strong>: We've completed <strong id="localProjectCount"></strong> projects in your area! <a href="#local-projects">View them</a></p>
+        </div>
+    </div>
+    
+    <!-- Quick Contact Strip (Mobile) -->
+    <div class="mobile-contact-strip">
+        <a href="tel:+919876543210" class="mobile-cta-call" onclick="gtag('event', 'phone_click', {'phone_number': '+919876543210', 'location': 'mobile_strip'})">
+            📞 Call Now
+        </a>
+        <button class="mobile-cta-quote" data-modal="quickQuote" onclick="gtag('event', 'cta_click', {'button_text': 'Quick Quote', 'cta_position': 'mobile_strip'})">
+            💬 Get Quote
+        </button>
+        <a href="https://wa.me/919876543210?text=Hi%20Rayvaanah,%20I'm%20interested%20in%20your%20infrastructure%20services" 
+           class="mobile-cta-whatsapp" 
+           target="_blank"
+           rel="noopener noreferrer"
+           onclick="gtag('event', 'whatsapp_click', {'location': 'mobile_strip'})">
+            💚 WhatsApp
+        </a>
+    </div>
+    
+    <!-- Expertise Preview -->
+    <section class="section-expertise-preview" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Infrastructure Solutions</h2>
+                <p class="section-subtitle">Comprehensive development services across India</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <article class="expertise-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="expertise-icon">
+                        <img src="/assets/icons/highways.svg" alt="Highway Construction Icon" width="80" height="80" loading="lazy">
+                    </div>
+                    <h3 itemprop="name">Highways & Roads</h3>
+                    <p itemprop="description">State-of-the-art transportation infrastructure connecting communities across India</p>
+                    <ul class="expertise-features">
+                        <li>5,000+ KM constructed</li>
+                        <li>National & State Highways</li>
+                        <li>Smart Road Systems</li>
+                    </ul>
+                    <a href="expertise.html#highways" class="expertise-link">Learn More →</a>
+                </article>
+                
+                <article class="expertise-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="expertise-icon">
+                        <img src="/assets/icons/bridges.svg" alt="Bridge Engineering Icon" width="80" height="80" loading="lazy">
+                    </div>
+                    <h3 itemprop="name">Bridges & Flyovers</h3>
+                    <p itemprop="description">Engineering marvels that stand the test of time with cutting-edge technology</p>
+                    <ul class="expertise-features">
+                        <li>200+ Bridges built</li>
+                        <li>Cable-stayed bridges</li>
+                        <li>Urban flyovers</li>
+                    </ul>
+                    <a href="expertise.html#bridges" class="expertise-link">Learn More →</a>
+                </article>
+                
+                <article class="expertise-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="expertise-icon">
+                        <img src="/assets/icons/water.svg" alt="Water Projects Icon" width="80" height="80" loading="lazy">
+                    </div>
+                    <h3 itemprop="name">Water Projects</h3>
+                    <p itemprop="description">Sustainable water management and distribution systems for future generations</p>
+                    <ul class="expertise-features">
+                        <li>75+ Water projects</li>
+                        <li>10M+ People served</li>
+                        <li>Treatment plants & dams</li>
+                    </ul>
+                    <a href="expertise.html#water" class="expertise-link">Learn More →</a>
+                </article>
+                
+                <article class="expertise-card" itemscope itemtype="https://schema.org/Service">
+                    <div class="expertise-icon">
+                        <img src="/assets/icons/urban.svg" alt="Urban Development Icon" width="80" height="80" loading="lazy">
+                    </div>
+                    <h3 itemprop="name">Urban Development</h3>
+                    <p itemprop="description">Creating smart, sustainable cities with modern infrastructure solutions</p>
+                    <ul class="expertise-features">
+                        <li>25+ Smart cities</li>
+                        <li>Metro rail systems</li>
+                        <li>Township development</li>
+                    </ul>
+                    <a href="expertise.html#urban" class="expertise-link">Learn More →</a>
+                </article>
+            </div>
+            
+            <div class="section-cta">
+                <a href="expertise.html" class="btn-primary">Explore All Services</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cost Calculator Section -->
+    <section class="section-cost-calculator">
+        <div class="container">
+            <div class="calculator-wrapper">
+                <div class="calculator-intro">
+                    <h2>Estimate Your Project Cost</h2>
+                    <p>Get an instant rough estimate for your infrastructure project. Our experts will provide a detailed quote after consultation.</p>
+                </div>
+                
+                <form id="costCalculator" class="cost-calculator-form">
+                    <div class="form-group">
+                        <label for="projectType">Project Type:</label>
+                        <select id="projectType" name="projectType" required>
+                            <option value="">Select project type</option>
+                            <option value="highway" data-rate="10">Highway/Road (per km)</option>
+                            <option value="bridge" data-rate="50">Bridge (per meter)</option>
+                            <option value="water" data-rate="100">Water Treatment Plant (per MLD)</option>
+                            <option value="building" data-rate="2000">Building (per sq ft)</option>
+                            <option value="urban" data-rate="500">Urban Infrastructure (per acre)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectSize">Project Size:</label>
+                        <input type="number" id="projectSize" name="projectSize" min="1" placeholder="Enter size" required>
+                        <span class="unit-label" id="unitLabel">units</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectLocation">Location (City/State):</label>
+                        <input type="text" id="projectLocation" name="projectLocation" placeholder="e.g., Mumbai, Maharashtra" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Calculate Estimate</button>
+                </form>
+                
+                <div id="calculatorResult" class="calculator-result" hidden>
+                    <div class="result-content">
+                        <h3>Estimated Cost Range</h3>
+                        <p class="cost-range">
+                            <span class="currency">₹</span>
+                            <span id="minCost" class="cost-value">0</span>
+                            <span class="separator"> - </span>
+                            <span class="currency">₹</span>
+                            <span id="maxCost" class="cost-value">0</span>
+                            <span class="cost-unit">Crores</span>
+                        </p>
+                        <p class="result-disclaimer">*This is a rough estimate. Actual cost may vary based on specifications, location, and market conditions.</p>
+                        <button class="btn-primary" data-modal="detailedQuote" onclick="gtag('event', 'cta_click', {'button_text': 'Get Detailed Quote', 'cta_position': 'calculator'})">
+                            Get Detailed Quote & Consultation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Social Proof / Stats Section -->
+    <section class="section-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🏗️</div>
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number" data-count="25">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number" data-count="2000">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🌍</div>
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">States Covered</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Projects -->
+    <section class="section-signature" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Landmarks that define excellence in infrastructure</p>
+            </div>
+            
+            <div class="projects-showcase">
+                <article class="project-feature" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image">
+                        <img src="/assets/images/project-1.jpg" 
+                             srcset="/assets/images/project-1-mobile.jpg 480w,
+                                     /assets/images/project-1-tablet.jpg 768w,
+                                     /assets/images/project-1.jpg 1200w"
+                             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 600px"
+                             alt="Mumbai Coastal Road - 29.2 km freeway infrastructure project" 
+                             width="600"
+                             height="400"
+                             loading="lazy"
+                             itemprop="image">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Highway Infrastructure</span>
+                        <h3 itemprop="name">Mumbai Coastal Road</h3>
+                        <p itemprop="description">
+                            A transformative 8-lane freeway spanning 29.2 km along Mumbai's western coastline, featuring 
+                            twin tunnels, interchanges, and bridges. This landmark project redefines urban mobility.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">₹12,700 Cr</span>
+                                <span class="stat-label">Project Value</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">29.2 km</span>
+                                <span class="stat-label">Total Length</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Ongoing</span>
+                                <span class="stat-label">Status</span>
+                            </div>
+                        </div>
+                        <a href="portfolio.html" class="project-link">View Full Project →</a>
+                    </div>
+                </article>
+                
+                <article class="project-feature" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image">
+                        <img src="/assets/images/project-2.jpg"
+                             srcset="/assets/images/project-2-mobile.jpg 480w,
+                                     /assets/images/project-2-tablet.jpg 768w,
+                                     /assets/images/project-2.jpg 1200w"
+                             sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 600px"
+                             alt="Delhi Metro Phase IV expansion project with 61.7 km new lines" 
+                             width="600"
+                             height="400"
+                             loading="lazy"
+                             itemprop="image">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Urban Transit</span>
+                        <h3 itemprop="name">Delhi Metro Phase IV</h3>
+                        <p itemprop="description">
+                            Expanding the capital's lifeline with cutting-edge transit solutions featuring 61.7 km of new metro lines and 46 stations with modern amenities.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-value">61.7 km</span>
+                                <span class="stat-label">New Lines</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">46</span>
+                                <span class="stat-label">New Stations</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Completed</span>
+                                <span class="stat-label">Status</span>
+                            </div>
+                        </div>
+                        <a href="portfolio.html" class="project-link">View Full Project →</a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="section-cta">
+                <a href="portfolio.html" class="btn-secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technology Section -->
+    <section class="section-technology">
+        <div class="container">
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h2 class="section-title">Innovation Meets Excellence</h2>
+                    <p class="tech-description">
+                        Leveraging cutting-edge technology and sustainable practices to deliver 
+                        infrastructure that stands the test of time. Our commitment to innovation 
+                        ensures every project exceeds global standards.
+                    </p>
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>BIM Technology Integration</span>
+                        </div>
+                        <div class="tech-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Green Building Certified</span>
+                        </div>
+                        <div class="tech-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>ISO 9001:2015 Certified</span>
+                        </div>
+                        <div class="tech-feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Zero Accident Policy</span>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn-secondary">Learn About Our Process</a>
+                </div>
+                <div class="tech-visual">
+                    <img src="/assets/images/technology-innovation.jpg"
+                         srcset="/assets/images/technology-mobile.jpg 480w,
+                                 /assets/images/technology-tablet.jpg 768w,
+                                 /assets/images/technology.jpg 1200w"
+                         sizes="(max-width: 768px) 100vw, 50vw"
+                         alt="Advanced construction technology and BIM integration" 
+                         width="600"
+                         height="450"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Reviews/Testimonials Section -->
+    <section class="section-reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="reviews-summary">
+                    <div class="rating-display">
+                        <span class="rating-number">4.8</span>
+                        <div class="stars">★★★★★</div>
+                        <span class="rating-count">Based on 127+ reviews</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews-grid" itemscope itemtype="https://schema.org/Organization">
+                <article class="review-card" itemscope itemtype="https://schema.org/Review">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="/assets/images/reviewer-1.jpg" alt="Client testimonial" class="reviewer-avatar" width="60" height="60" loading="lazy">
+                            <div>
+                                <span class="reviewer-name" itemprop="author">Rajesh Kumar</span>
+                                <span class="reviewer-company">NHAI Project Director</span>
+                            </div>
+                        </div>
+                        <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="5">
+                            <meta itemprop="bestRating" content="5">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="review-text" itemprop="reviewBody">
+                        "Rayvaanah delivered our 150km highway project ahead of schedule with exceptional quality. 
+                        Their use of BIM technology and commitment to safety standards is commendable."
+                    </p>
+                    <span class="review-date" itemprop="datePublished" content="2024-09-15">September 2024</span>
+                </article>
+                
+                <article class="review-card" itemscope itemtype="https://schema.org/Review">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="/assets/images/reviewer-2.jpg" alt="Client testimonial" class="reviewer-avatar" width="60" height="60" loading="lazy">
+                            <div>
+                                <span class="reviewer-name" itemprop="author">Priya Sharma</span>
+                                <span class="reviewer-company">Municipal Commissioner</span>
+                            </div>
+                        </div>
+                        <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="5">
+                            <meta itemprop="bestRating" content="5">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="review-text" itemprop="reviewBody">
+                        "The water treatment plant built by Rayvaanah has transformed our city's water supply. 
+                        Professional team, transparent process, and outstanding results."
+                    </p>
+                    <span class="review-date" itemprop="datePublished" content="2024-08-20">August 2024</span>
+                </article>
+                
+                <article class="review-card" itemscope itemtype="https://schema.org/Review">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <img src="/assets/images/reviewer-3.jpg" alt="Client testimonial" class="reviewer-avatar" width="60" height="60" loading="lazy">
+                            <div>
+                                <span class="reviewer-name" itemprop="author">Amit Patel</span>
+                                <span class="reviewer-company">Urban Development Authority</span>
+                            </div>
+                        </div>
+                        <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                            <meta itemprop="ratingValue" content="5">
+                            <meta itemprop="bestRating" content="5">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="review-text" itemprop="reviewBody">
+                        "Best infrastructure company we've worked with. Their smart city solutions and IoT integration 
+                        have positioned our city as a model for others to follow."
+                    </p>
+                    <span class="review-date" itemprop="datePublished" content="2024-10-05">October 2024</span>
+                </article>
+            </div>
+            
+            <!-- Google Reviews Widget Placeholder -->
+            <div class="google-reviews-widget">
+                <a href="https://www.google.com/maps/search/?api=1&query=Rayvaanah+Realtors" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn-secondary">
+                    View All Google Reviews
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Form Section -->
+    <section class="section-contact-form" id="contact-form">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <div class="form-intro">
+                    <h2>Get Your Free Consultation</h2>
+                    <p>Our infrastructure experts are ready to discuss your project requirements. Fill out the form and we'll contact you within 24 hours.</p>
+                    
+                    <!-- Trust Signals -->
+                    <div class="trust-signals">
+                        <div class="trust-badge">
+                            <span class="icon">✓</span>
+                            <span>Free Consultation</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="icon">✓</span>
+                            <span>24-Hour Response</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="icon">✓</span>
+                            <span>No Obligation Quote</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="icon">✓</span>
+                            <span>Expert Guidance</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form id="leadForm" class="lead-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required aria-required="true">
+                            <span class="error-message" hidden>Please enter your first name</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required aria-required="true">
+                            <span class="error-message" hidden>Please enter your last name</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                            <span class="error-message" hidden>Please enter a valid email</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required aria-required="true" placeholder="10-digit number">
+                            <span class="error-message" hidden>Please enter a valid 10-digit phone number</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company/Organization</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectType">Project Type *</label>
+                        <select id="projectType" name="projectType" required aria-required="true">
+                            <option value="">Select project type</option>
+                            <option value="highway">Highway/Road Construction</option>
+                            <option value="bridge">Bridge & Flyover Engineering</option>
+                            <option value="water">Water Treatment & Projects</option>
+                            <option value="urban">Urban Development</option>
+                            <option value="building">Building Construction</option>
+                            <option value="other">Other Infrastructure</option>
+                        </select>
+                        <span class="error-message" hidden>Please select a project type</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectLocation">Project Location (City/State) *</label>
+                        <input type="text" id="projectLocation" name="projectLocation" placeholder="e.g., Mumbai, Maharashtra" required aria-required="true">
+                        <span class="error-message" hidden>Please enter project location</span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Project Details/Requirements</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span>Send me updates about infrastructure trends and company news</span>
+                        </label>
+                    </div>
+                    
+                    <!-- Hidden fields for tracking -->
+                    <input type="hidden" name="source" id="leadSource" value="website">
+                    <input type="hidden" name="page" id="leadPage" value="">
+                    <input type="hidden" name="utm_source" id="utmSource" value="">
+                    <input type="hidden" name="utm_medium" id="utmMedium" value="">
+                    <input type="hidden" name="utm_campaign" id="utmCampaign" value="">
+                    <input type="hidden" name="timestamp" id="leadTimestamp" value="">
+                    
+                    <button type="submit" class="btn-primary btn-submit">
+                        <span class="btn-text">Get Free Consultation</span>
+                        <span class="btn-loader" hidden>Sending...</span>
+                    </button>
+                    
+                    <p class="form-privacy">
+                        We respect your privacy. Your information will be kept confidential and used only to contact you about your project.
+                    </p>
+                </form>
+                
+                <div id="formSuccess" class="form-message success" hidden>
+                    <div class="message-icon">✓</div>
+                    <h3>Thank You!</h3>
+                    <p>Your request has been received. Our team will contact you within 24 hours.</p>
+                    <p class="reference-number">Reference: <strong id="referenceNumber"></strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section (Schema-rich) -->
+    <section class="section-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions about our services</p>
+            </div>
+            
+            <div class="faq-grid" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            What types of infrastructure projects do you handle?
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" hidden>
+                        <p itemprop="text">We specialize in highway construction, bridge engineering, water treatment plants, urban development, smart city solutions, and public building projects. With 25+ years of experience, we've completed over 500 projects across 15+ states in India.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            How long does a typical infrastructure project take?
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" hidden>
+                        <p itemprop="text">Project timelines vary based on scope and complexity. Highway projects typically take 18-36 months, bridges 12-24 months, and water treatment plants 24-48 months. We provide detailed timelines during the consultation phase and are known for on-time delivery.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            Do you work on government tenders?
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" hidden>
+                        <p itemprop="text">Yes, we actively participate in government tenders from NHAI, state PWDs, municipal corporations, and other government bodies. We have a dedicated team for tender management and have successfully completed numerous government infrastructure projects.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            What makes Rayvaanah different from other contractors?
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" hidden>
+                        <p itemprop="text">Our differentiators include: (1) 25+ years of proven track record, (2) ISO 9001:2015 certification, (3) BIM technology integration, (4) Zero accident safety policy, (5) In-house engineering expertise, (6) Sustainable construction practices, and (7) Strong financial backing for large projects.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            How can I get a quote for my project?
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" hidden>
+                        <p itemprop="text">Getting a quote is easy! Fill out our contact form above, call us at +91-9876543210, or email info@rayvaanah.com. Our team will schedule a free consultation to understand your requirements and provide a detailed proposal within 7-10 business days.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle" aria-expanded="false">
+                            Do you provide maintenance services after project completion?
+                            <span class="faq-icon">+</span>
+                        </button>
+                    </h3>
+                    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" hidden>
+                        <p itemprop="text">Yes, we offer comprehensive maintenance contracts for all types of infrastructure. Our maintenance services include regular inspections, preventive maintenance, emergency repairs, and performance monitoring. We ensure your infrastructure remains in optimal condition long after project completion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Banner -->
+    <section class="section-cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Infrastructure Project?</h2>
+                <p>Join 500+ satisfied clients who chose Rayvaanah for their infrastructure needs</p>
+                <div class="cta-actions">
+                    <a href="#contact-form" class="btn-primary btn-lg">Get Free Consultation</a>
+                    <a href="tel:+919876543210" class="btn-ghost btn-lg">
+                        <span class="btn-icon">📞</span>
+                        Call: +91 98765 43210
+                    </a>
+                </div>
+                <p class="cta-subtext">⚡ Quick response guaranteed | 💼 Professional service | 🏆 25+ years trusted</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer-primary">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">RAYVAANAH</h3>
+                    <p class="footer-tagline">Building Tomorrow's Infrastructure Today</p>
+                    <p class="footer-description">
+                        India's premier infrastructure development company with 25+ years of excellence. 
+                        Specializing in highways, bridges, water projects, and urban development.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/rayvaanah" 
+                           aria-label="Follow us on LinkedIn" 
+                           class="social-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="/assets/icons/linkedin.svg" alt="LinkedIn" width="24" height="24" loading="lazy">
+                        </a>
+                        <a href="https://twitter.com/rayvaanah" 
+                           aria-label="Follow us on Twitter" 
+                           class="social-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="/assets/icons/twitter.svg" alt="Twitter" width="24" height="24" loading="lazy">
+                        </a>
+                        <a href="https://www.facebook.com/rayvaanah" 
+                           aria-label="Like us on Facebook" 
+                           class="social-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="/assets/icons/facebook.svg" alt="Facebook" width="24" height="24" loading="lazy">
+                        </a>
+                        <a href="https://www.instagram.com/rayvaanah" 
+                           aria-label="Follow us on Instagram" 
+                           class="social-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="/assets/icons/instagram.svg" alt="Instagram" width="24" height="24" loading="lazy">
+                        </a>
+                        <a href="https://www.youtube.com/@rayvaanah" 
+                           aria-label="Subscribe on YouTube" 
+                           class="social-link"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img src="/assets/icons/youtube.svg" alt="YouTube" width="24" height="24" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="expertise.html">Our Services</a></li>
+                        <li><a href="portfolio.html">Projects</a></li>
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="tenders.html">Current Tenders</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="expertise.html#highways">Highway Construction</a></li>
+                        <li><a href="expertise.html#bridges">Bridge Engineering</a></li>
+                        <li><a href="expertise.html#water">Water Projects</a></li>
+                        <li><a href="expertise.html#urban">Urban Development</a></li>
+                        <li><a href="expertise.html#buildings">Building Construction</a></li>
+                        <li><a href="expertise.html#maintenance">Maintenance Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <strong>Head Office:</strong><br>
+                        123 Business District<br>
+                        Mumbai, Maharashtra 400001<br>
+                        India<br><br>
+                        <strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a><br>
+                        <strong>Email:</strong> <a href="mailto:info@rayvaanah.com">info@rayvaanah.com</a><br><br>
+                        <strong>Business Hours:</strong><br>
+                        Mon-Fri: 9:00 AM - 6:00 PM<br>
+                        Sat: 9:00 AM - 2:00 PM
+                    </address>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rayvaanah Realtors. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                    <a href="sitemap.xml">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/919876543210?text=Hi%20Rayvaanah,%20I'm%20interested%20in%20your%20infrastructure%20services.%20Can%20you%20help%20me?" 
+       class="whatsapp-float" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Chat with us on WhatsApp"
+       onclick="gtag('event', 'whatsapp_click', {'location': 'float_button'})">
+        <img src="/assets/icons/whatsapp.svg" alt="WhatsApp" width="30" height="30">
+        <span class="pulse-ring"></span>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+    
+    <!-- Exit Intent Modal -->
+    <div id="exitIntentModal" class="modal-overlay" hidden aria-modal="true" role="dialog" aria-labelledby="exitModalTitle">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h2 id="exitModalTitle">Wait! Don't Miss Out</h2>
+                <p>Get a <strong>FREE Project Consultation</strong> worth ₹10,000</p>
+            </div>
+            <form id="exitIntentForm" class="modal-form">
+                <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required aria-label="Phone Number">
+                <input type="email" name="email" placeholder="Email Address" required aria-label="Email Address">
+                <select name="interest" required aria-label="Project Type">
+                    <option value="">I'm interested in...</option>
+                    <option value="highway">Highway Construction</option>
+                    <option value="bridge">Bridge Projects</option>
+                    <option value="water">Water Infrastructure</option>
+                    <option value="urban">Urban Development</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="hidden" name="source" value="exit_intent">
+                <button type="submit" class="btn-primary">
+                    Get FREE Consultation
+                </button>
+            </form>
+            <p class="modal-trust">
+                ✓ No obligation | ✓ Expert advice | ✓ 24-hour response
+            </p>
+        </div>
+    </div>
+    
+    <!-- Quick Quote Modal -->
+    <div id="quickQuoteModal" class="modal-overlay" hidden aria-modal="true" role="dialog" aria-labelledby="quoteModalTitle">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h2 id="quoteModalTitle">Get Quick Quote</h2>
+                <p>We'll respond within 24 hours</p>
+            </div>
+            <form id="quickQuoteForm" class="modal-form">
+                <input type="text" name="name" placeholder="Full Name" required aria-label="Full Name">
+                <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required aria-label="Phone Number">
+                <input type="email" name="email" placeholder="Email" required aria-label="Email">
+                <select name="projectType" required aria-label="Project Type">
+                    <option value="">Project Type</option>
+                    <option value="highway">Highway/Road</option>
+                    <option value="bridge">Bridge/Flyover</option>
+                    <option value="water">Water Project</option>
+                    <option value="urban">Urban Development</option>
+                    <option value="building">Building</option>
+                </select>
+                <input type="text" name="location" placeholder="Project Location" required aria-label="Project Location">
+                <textarea name="details" placeholder="Brief project details..." rows="3" aria-label="Project Details"></textarea>
+                <input type="hidden" name="source" value="quick_quote">
+                <button type="submit" class="btn-primary">Submit Quote Request</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/geolocation.js"></script>
+    
+    <!-- Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker registered'))
+                    .catch(err => console.log('Service Worker registration failed'));
+            });
+        }
+    </script>
 </body>
-
 </html>
-
-
